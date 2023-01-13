@@ -60,3 +60,5 @@ Here you can find some screenshots of how your CodeCov reports will look like.
 ### Commits report view
 ![Commits report view](docs/img/commits_view.png)
 
+### Pull request integration
+![Pull request integration](docs/img/pr_report.png)
