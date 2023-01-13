@@ -97,6 +97,14 @@ jobs:
     - name: Check Formatting
       run: mix format --check-formatted
 
-    # Step: Execute the tests.
-    - name: Run tests
-      run: mix test
+    # Step: Execute the tests and generate the coverage report using excoveralls.
+    - name: Run tests & generate coverage report
+      run: mix coveralls.xml
+
+    # Step: Upload coverage report to CodeCov.
+    - name: Upload coverage report
+      uses: codecov/codecov-action@v3
+      with:
+        files: ./cover/excoveralls.xml
+        fail_ci_if_error: true
+        verbose: true
