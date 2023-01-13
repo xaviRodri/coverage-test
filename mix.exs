@@ -16,7 +16,8 @@ defmodule CoverageTest.MixProject do
         "coveralls.detail": :test,
         "coveralls.post": :test,
         "coveralls.html": :test,
-        "coveralls.xml": :test
+        "coveralls.xml": :test,
+        "coveralls.json": :test
       ]
     ]
   end
